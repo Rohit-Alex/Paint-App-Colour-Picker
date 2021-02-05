@@ -4,7 +4,7 @@ const Selection = (props) => {
     const[background, setBackground] = useState({background:""});
     const { key, applyColor} = props;
     return (
-        <div className="fix-box" style={{background}} onClick={()=>{applyColor(setBackground)}}>
+        <div className="fix-box" style={{background}} key = {key} onClick={()=>{applyColor(setBackground)}}>
             <h2 className="subheading">Selection</h2>
         </div>
     );
